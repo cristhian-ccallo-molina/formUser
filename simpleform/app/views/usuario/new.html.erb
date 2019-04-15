@@ -1,0 +1,9 @@
+Ingresar la informacion del Usuario
+<hr>
+<%= form_for @usuario do |f| -%>
+  Nombres: <%= f.text_field :first_name %><br />
+  Apellidos: <%= f.text_field :last_name %><br />
+  Email: <%= f.email_field :email %><br />
+  Age: <%= f.text_field :age %><br />
+  <%= f.submit%>
+<% end -%>
